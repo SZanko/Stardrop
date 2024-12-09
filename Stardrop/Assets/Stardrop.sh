@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/env bash
 chmod u+x ./Internal
 ./Internal

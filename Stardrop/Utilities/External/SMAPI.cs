@@ -37,7 +37,7 @@ namespace Stardrop.Utilities.External
             Program.helper.Log($"Starting SMAPI with the following arguments: {arguments}");
             var processInfo = new ProcessStartInfo
             {
-                FileName = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? smapiInfo.FullName : "/bin/bash",
+                FileName = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? smapiInfo.FullName : "/bin/env bash",
                 Arguments = arguments,
                 WorkingDirectory = smapiInfo.DirectoryName,
                 RedirectStandardOutput = false,
